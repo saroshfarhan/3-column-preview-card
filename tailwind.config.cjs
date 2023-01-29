@@ -5,7 +5,11 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ["Big Shoulders Display", "cursive"],
+      },
+    },
   },
   plugins: [],
 };
