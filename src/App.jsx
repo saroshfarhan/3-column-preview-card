@@ -5,10 +5,10 @@ import luxury from "./assets/icon-luxury.svg";
 
 function App() {
   return (
-    <main className="container mx-4 my-10 grid h-full w-auto items-center justify-center md:mx-auto md:my-auto md:flex md:h-[100vh] md:w-[850px] lg:mx-auto lg:my-auto lg:flex lg:h-[100vh] lg:w-[850px]">
+    <main className="container mx-4 my-10 grid h-full w-auto items-center justify-center overflow-hidden rounded-2xl  md:mx-auto md:my-auto md:flex md:h-[100vh] md:w-[850px] lg:mx-auto lg:my-auto lg:flex lg:h-[100vh] lg:w-[850px]">
       <div
         id="sedan"
-        className="h-[460px] rounded-l-xl bg-brightOrange px-10 py-10"
+        className="h-[420px] bg-brightOrange px-10 py-10 md:h-[460px] md:rounded-l-xl lg:h-[460px] lg:rounded-l-xl"
       >
         <img src={sedan} alt="sedan image icon" />
         <h1 className="mt-6 font-heading text-3xl uppercase text-veryLightGray">
@@ -22,7 +22,10 @@ function App() {
           Learn More
         </button>
       </div>
-      <div id="suvs" className="h-[460px] bg-darkCyan px-10 py-10">
+      <div
+        id="suvs"
+        className="h-[420px] bg-darkCyan px-10 py-10 md:h-[460px] lg:h-[460px]"
+      >
         <img src={suv} alt="sedan image icon" />
         <h1 className="mt-6 font-heading text-3xl uppercase text-veryLightGray">
           Suvs
@@ -37,7 +40,7 @@ function App() {
       </div>
       <div
         id="luxury"
-        className="h-[460px] rounded-r-xl bg-veryDarkCyan px-10 py-10"
+        className="bg-veryDarkCyan px-10 py-10 md:h-[460px] md:rounded-r-xl lg:h-[460px] lg:rounded-r-xl"
       >
         <img src={luxury} alt="sedan image icon" />
         <h1 className="mt-6 font-heading text-3xl uppercase text-veryLightGray">
